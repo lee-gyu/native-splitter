@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Native Splitter</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+            padding: 8px;
+        }
+
+        #splitter_panel {
+            border: 1px solid gray;
+            width: 800px;
+            height: 500px;
+        }
+    </style>
+    <div id="splitter_panel"></div>
+    <script type="module">
+        import { createNativeSplitter } from "./src/index.tsx";
+
+        createNativeSplitter( {
+            htmlElement: document.querySelector("#splitter_panel")
+        } )
+    </script>
+</body>
+</html>

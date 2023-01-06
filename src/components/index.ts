@@ -1,0 +1,1 @@
+export { createNativeSplitter } from "./native-splitter";
